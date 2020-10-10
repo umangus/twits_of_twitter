@@ -28,6 +28,7 @@ print(colored("Predicting on train data", "yellow"))
 prediction = randomForestClassifier.predict(train_tweet_vector)
 print(colored("Training accuracy: {}%".format(accuracy_score(train_data['Sentiment'], prediction)*100), "green"))
 
+print(colored("Predicting on test data", "green"))
 print(colored("Predicting on test data", "yellow"))
 prediction = randomForestClassifier.predict(test_tweet_vector)
 print(colored("Testing accuracy: {}%".format(accuracy_score(test_data['Sentiment'], prediction)*100), "green"))
